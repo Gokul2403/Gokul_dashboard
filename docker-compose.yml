@@ -1,0 +1,15 @@
+services:
+  bala-app:
+    build: .
+    container_name: bala-app
+    restart: always
+    ports:
+      - "3001:3000"
+    # Load Binance + Upstash Redis credentials into the container.
+    # Without this the app can't reach Binance or Redis, so balances/compound
+    # data fail and the goal falls back to a $1000 default.
+    env_file:
+      - .env
+    # Persist the local order/audit DB across rebuilds.
+    volumes:
+      - ./data:/app/data

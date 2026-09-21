@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "regions": ["sin1"],
+  "env": {
+    "BINANCE_API_KEY": "C5yHe6h4chniMofcsTXj5t4nN0XBf00L95DeC0iluWyPU4F7zn3Pn7lDM28XJdAi",
+    "BINANCE_API_SECRET": "8EwaijvPkmpJk7ojcI3oNotfR91gcc2DkOXUB70pouVRDEJshJHXwi0bMQKsGgL9",
+    "BINANCE_TESTNET": "false",
+    "UPSTASH_REDIS_REST_URL": "https://brave-lacewing-288991.upstash.io",
+    "UPSTASH_REDIS_REST_TOKEN": "gQAAAAAABGjfAAIgcDJlZTM0N2NlNjhmYmE0NGIxOTU4N2IxOTkwNmUyOGE2ZA"
+  }
+}
